@@ -1,13 +1,17 @@
-$(document).ready(function() {
-  $("h1").click(function () {
-    alert("This is a header.");
+
+
+$(document).ready(function () {
+  $(".clickable").click(function () {
+    $("#walrus-showing").toggle();
+    $("#walrus-hidden").toggle();
   });
 
-  $("p").click(function () {
-    alert("This is a paragraph.");
-  });
+  $(".faded-header").click(function () {
+    $("#header").fadeOut();
 
-  $("img").click(function () {
-    alert("This is an image.");
   });
+  $("#header-appear").click(function () {
+    $("#header").fadeIn();
+  })
 });
+
